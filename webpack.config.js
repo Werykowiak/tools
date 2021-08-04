@@ -8,9 +8,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    loaders: [
-      { test: /\.hbs$/, loader: "handlebars-loader" }
-    ]
+    rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          // Disables attributes processing
+          sources: false,
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
