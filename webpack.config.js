@@ -8,11 +8,6 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  module: {
-    loaders: [
-      { test: /\.html$/, loader: "handlebars-loader" }
-    ]
-  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Custom template',
