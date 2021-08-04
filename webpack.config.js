@@ -10,11 +10,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "style.css",
+    }),
     new HtmlWebpackPlugin({
       title: 'Custom template',
       filename: 'index.html',
     }),
-    new MiniCssExtractPlugin()
   ],
   module: {
     rules: [
