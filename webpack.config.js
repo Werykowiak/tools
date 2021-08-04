@@ -13,14 +13,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Custom template',
       filename: 'index.html',
-    new: MiniCssExtractPlugin()
+    new: MiniCssExtractPlugin({
+      filename: "style.css",
+    })
     })
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
