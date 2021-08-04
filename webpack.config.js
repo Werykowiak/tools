@@ -11,7 +11,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Custom template',
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
