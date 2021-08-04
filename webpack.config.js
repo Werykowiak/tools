@@ -14,7 +14,7 @@ module.exports = {
       title: 'Custom template',
       filename: 'index.html',
     }),
-    new MiniCssExtractPlugin({
+    new HtmlWebpackPlugin({
       filename: "src/style.css",
     }),
   ],
