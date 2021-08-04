@@ -18,5 +18,12 @@ module.exports = {
       filename: "style.css",
     })
   ],
-  
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
