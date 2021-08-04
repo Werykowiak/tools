@@ -14,10 +14,6 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
-        options: {
-          // Disables attributes processing
-          sources: false,
-        },
       },
     ],
   },
