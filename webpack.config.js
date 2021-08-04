@@ -11,10 +11,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
+      filename: 'src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: "style.css",
+      filename: "src/style.css",
     }),
   ],
   module: {
