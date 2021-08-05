@@ -21,7 +21,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(css$|s[ac]ss)/i,
+        test: /\.(scss|sass)/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
         use: [
           // Creates `style` nodes from JS strings
