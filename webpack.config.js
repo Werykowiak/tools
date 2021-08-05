@@ -15,7 +15,7 @@ module.exports = {
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: "style.scss",
+      filename: "style.css",
     }),
   ],
   module: {
