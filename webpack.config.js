@@ -22,21 +22,8 @@ module.exports = {
     rules: [
       {
         test: /\.(s[ac]ss)/i,
-        use: [
-          {loader: MiniCssExtractPlugin.loader, },
-          {loader: "css-loader", },
-          {loader: "sass-loader", },
-          {loader: "postcss-loader",
-          options: {
-            plugins: function () {
-              return [
-                require('precss'),
-                require('autoprefixer')
-              ];}}
-            },
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader", "postcss-loader"],
       },
     ],
   },
 };
-
