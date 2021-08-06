@@ -22,7 +22,9 @@ module.exports = {
     rules: [
       {
         test: /\.(s[ac]ss)/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader","url-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        test: /\.(jpg|png)$/,
+        use: ["url-loader"],
       },
     ],
   },
