@@ -17,6 +17,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "style.css",
     }),
+    function () { 
+      return [
+        require('precss'),
+        require('autoprefixer')
+      ];
+    }
   ],
   module: {
     rules: [
