@@ -1,5 +1,51 @@
 @import "~bootstrap/scss/bootstrap";
 $body-color: red;
+#div1 {
+    background-color: rgb(0, 59, 115);
+    padding: 10px;
+    width: 250px;
+    box-sizing: border-box;
+    float: left;
+    color: white;
+  }
+#div1 > h3{
+    background-color: rgb(1, 45, 90);
+    width: 100%;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding-top: 10px;
+}
+img{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+img:hover{
+    transform: scale(1.25);
+}
+#div2{
+    float: left;
+    margin-left: 30px;
+}
+#div2 > h3{
+    color: rgb(6, 41, 80);
+    box-sizing: border-box;
+}
+#lista{
+    list-style-type:circle;  
+}
+footer{
+    font-size: 12px;
+    clear: both;
+}
 body{
-    color: $body-color;
+    width: auto;
 }
