@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import "./style.scss";
-import pic from 'pic.png'
+import pic from './pic.png'
 
 
 function component() {
