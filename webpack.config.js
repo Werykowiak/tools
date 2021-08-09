@@ -26,10 +26,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        loaders: "file-loader",
-        options: {
-          name: './assets/pic.png',
-        },
+        use: ["file-loader"],
       },
     ],
   },
