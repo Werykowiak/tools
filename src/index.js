@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import "./style.scss";
-import mainImage from './images/main.png';
+import mainImage from 'assets/pic.png';
 
 img.src = mainImage;
 function component() {
