@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import "./style.scss";
+import mainImage from './images/main.png';
 
-
+img.src = mainImage;
 function component() {
     const element = document.createElement('div');
   
