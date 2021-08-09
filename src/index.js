@@ -7,10 +7,6 @@ function component() {
   
     // Lodash, now imported by this script
 
-    const myIcon = new Image();
-    myIcon.src = Icon;
-
-    element.appendChild(myIcon);
     return element;
   }
   
