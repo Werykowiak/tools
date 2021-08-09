@@ -1,17 +1,16 @@
 import _ from 'lodash';
 import "./style.scss";
-import mainImage from 'assets/pic.png';
+import Icon from './assets/pic.png';
 
 function component() {
     const element = document.createElement('div');
   
     // Lodash, now imported by this script
 
-    const myImage = new Image();
-    myImage.src = mainImage;
+    const myIcon = new Image();
+    myIcon.src = Icon;
 
-    element.appendChild(myImage);
-  
+    element.appendChild(myIcon);
     return element;
   }
   
