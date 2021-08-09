@@ -26,6 +26,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        dependency: { not: ['url'] },
         type: 'asset/resource',
         type: 'javascript/auto'
       },
