@@ -1,15 +1,15 @@
+section{
+margin-left: 10px;
+margin-right: 10px;
+}
 #div1 {
     background-color: rgb(0, 59, 115);
     padding: 10px;
-    width: 16%;
-    box-sizing: border-box;
-    float: left;
     color: white;
   }
 #div1 > h3{
     background-color: rgb(1, 45, 90);
-    width: 100%;
-    box-sizing: border-box;
+    
 }
 ul{
     list-style-type: none;
@@ -30,8 +30,7 @@ img:hover{
     transform: scale(1.25);
 }
 #div2{
-    width: 80%;
-    float: left;
+    margin-top: 20px;
     margin-left: 10px;
 }
 #div2 > h3{
@@ -45,7 +44,5 @@ footer{
     font-size: 12px;
     clear: both;
 }
-body{
-    width: auto;
-}
+
 @import "~bootstrap/scss/bootstrap";
